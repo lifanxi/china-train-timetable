@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSKB", "OnlineSKB\OnlineSKB.csproj", "{DA83566F-3906-40C7-B055-D3D61294E50B}"
 EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "OnlineSKBPackage", "OnlineSKBPackage\OnlineSKBPackage.vddproj", "{EDE5D082-D12D-4969-A7F9-EBF34585ADFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{DA83566F-3906-40C7-B055-D3D61294E50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA83566F-3906-40C7-B055-D3D61294E50B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA83566F-3906-40C7-B055-D3D61294E50B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EDE5D082-D12D-4969-A7F9-EBF34585ADFE}.Debug|Any CPU.ActiveCfg = Debug
+		{EDE5D082-D12D-4969-A7F9-EBF34585ADFE}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
