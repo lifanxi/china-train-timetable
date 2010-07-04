@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using OnlineSKB.Properties;
 
 namespace OnlineSKB
 {
@@ -114,6 +115,9 @@ namespace OnlineSKB
         private void OnlineSKB_Load(object sender, EventArgs e)
         {
             ToggleUI(menuStationStationQuery, new EventArgs());
+            //System.Resources.ResourceManager resources = new System.Resources.ResourceManager("OnlinkSKB", GetType().Assembly);
+            //this.Icon = (System.Drawing.Icon)resources.GetObject("OnlineSKB");
+            this.Icon = Properties.Resources.OnlineSKB;
         }
 
         private void comboBoxTextChanged(object sender, EventArgs e)

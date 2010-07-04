@@ -41,9 +41,13 @@
             this.dataGridTableStyle = new System.Windows.Forms.DataGridTableStyle();
             this.dataGridTextBoxColumn1 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.dataGridTextBoxColumn2 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn3 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.dataGridTextBoxColumn4 = new System.Windows.Forms.DataGridTextBoxColumn();
+            this.dataGridTextBoxColumn3 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.dataGridTextBoxColumn5 = new System.Windows.Forms.DataGridTextBoxColumn();
+            this.dataGridTextBoxColumn6 = new System.Windows.Forms.DataGridTextBoxColumn();
+            this.dataGridTextBoxColumn7 = new System.Windows.Forms.DataGridTextBoxColumn();
+            this.dataGridTextBoxColumn8 = new System.Windows.Forms.DataGridTextBoxColumn();
+            this.dataGridTextBoxColumn9 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.lblOne = new System.Windows.Forms.Label();
             this.lblTwo = new System.Windows.Forms.Label();
             this.cbDepart = new System.Windows.Forms.ComboBox();
@@ -51,10 +55,6 @@
             this.queryTime = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.tbTrainCode = new System.Windows.Forms.TextBox();
-            this.dataGridTextBoxColumn6 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn7 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn8 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn9 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.SuspendLayout();
             // 
             // mainMenu
@@ -141,13 +141,6 @@
             this.dataGridTextBoxColumn2.HeaderText = "发站";
             this.dataGridTextBoxColumn2.MappingName = "RangeDeparture";
             // 
-            // dataGridTextBoxColumn3
-            // 
-            this.dataGridTextBoxColumn3.Format = "";
-            this.dataGridTextBoxColumn3.FormatInfo = null;
-            this.dataGridTextBoxColumn3.HeaderText = "到站";
-            this.dataGridTextBoxColumn3.MappingName = "RangeDestination";
-            // 
             // dataGridTextBoxColumn4
             // 
             this.dataGridTextBoxColumn4.Format = "HH:mm";
@@ -155,12 +148,47 @@
             this.dataGridTextBoxColumn4.HeaderText = "发时";
             this.dataGridTextBoxColumn4.MappingName = "RangeDepartTime";
             // 
+            // dataGridTextBoxColumn3
+            // 
+            this.dataGridTextBoxColumn3.Format = "";
+            this.dataGridTextBoxColumn3.FormatInfo = null;
+            this.dataGridTextBoxColumn3.HeaderText = "到站";
+            this.dataGridTextBoxColumn3.MappingName = "RangeDestination";
+            // 
             // dataGridTextBoxColumn5
             // 
             this.dataGridTextBoxColumn5.Format = "HH:mm";
             this.dataGridTextBoxColumn5.FormatInfo = null;
             this.dataGridTextBoxColumn5.HeaderText = "到时";
             this.dataGridTextBoxColumn5.MappingName = "RangeDestTime";
+            // 
+            // dataGridTextBoxColumn6
+            // 
+            this.dataGridTextBoxColumn6.Format = "";
+            this.dataGridTextBoxColumn6.FormatInfo = null;
+            this.dataGridTextBoxColumn6.HeaderText = "始发站";
+            this.dataGridTextBoxColumn6.MappingName = "TrainDeparture";
+            // 
+            // dataGridTextBoxColumn7
+            // 
+            this.dataGridTextBoxColumn7.Format = "";
+            this.dataGridTextBoxColumn7.FormatInfo = null;
+            this.dataGridTextBoxColumn7.HeaderText = "终点站";
+            this.dataGridTextBoxColumn7.MappingName = "TrainDestination";
+            // 
+            // dataGridTextBoxColumn8
+            // 
+            this.dataGridTextBoxColumn8.Format = "";
+            this.dataGridTextBoxColumn8.FormatInfo = null;
+            this.dataGridTextBoxColumn8.HeaderText = "等级";
+            this.dataGridTextBoxColumn8.MappingName = "TrainClass";
+            // 
+            // dataGridTextBoxColumn9
+            // 
+            this.dataGridTextBoxColumn9.Format = "";
+            this.dataGridTextBoxColumn9.FormatInfo = null;
+            this.dataGridTextBoxColumn9.HeaderText = "历时";
+            this.dataGridTextBoxColumn9.MappingName = "RangeDuration";
             // 
             // lblOne
             // 
@@ -219,34 +247,6 @@
             this.tbTrainCode.Size = new System.Drawing.Size(72, 21);
             this.tbTrainCode.TabIndex = 9;
             this.tbTrainCode.Visible = false;
-            // 
-            // dataGridTextBoxColumn6
-            // 
-            this.dataGridTextBoxColumn6.Format = "";
-            this.dataGridTextBoxColumn6.FormatInfo = null;
-            this.dataGridTextBoxColumn6.HeaderText = "始发站";
-            this.dataGridTextBoxColumn6.MappingName = "TrainDeparture";
-            // 
-            // dataGridTextBoxColumn7
-            // 
-            this.dataGridTextBoxColumn7.Format = "";
-            this.dataGridTextBoxColumn7.FormatInfo = null;
-            this.dataGridTextBoxColumn7.HeaderText = "终点站";
-            this.dataGridTextBoxColumn7.MappingName = "TrainDestination";
-            // 
-            // dataGridTextBoxColumn8
-            // 
-            this.dataGridTextBoxColumn8.Format = "";
-            this.dataGridTextBoxColumn8.FormatInfo = null;
-            this.dataGridTextBoxColumn8.HeaderText = "等级";
-            this.dataGridTextBoxColumn8.MappingName = "TrainClass";
-            // 
-            // dataGridTextBoxColumn9
-            // 
-            this.dataGridTextBoxColumn9.Format = "";
-            this.dataGridTextBoxColumn9.FormatInfo = null;
-            this.dataGridTextBoxColumn9.HeaderText = "历时";
-            this.dataGridTextBoxColumn9.MappingName = "RangeDuration";
             // 
             // OnlineSKB
             // 
