@@ -43,12 +43,21 @@ namespace OnlineSKB
             {
                 case QueryType.StationStation:
                     trainInfo = query.ByStationSataion(cbDepart.Text.Trim(), cbDest.Text.Trim(), queryTime.Value.Date);
+                    dataGrid.TableStyles.Clear();
+                    dataGridTableStyleStationStation.MappingName = "TrainInfo[]";
+                    dataGrid.TableStyles.Add(dataGridTableStyleStationStation);
                     break;
                 case QueryType.TrainCode:
                     trainInfo = query.ByTrainCode(tbTrainCode.Text, queryTime.Value.Date);
+                    dataGrid.TableStyles.Clear();
+                    dataGridTableStyleCode.MappingName = "TrainInfo[]";
+                    dataGrid.TableStyles.Add(dataGridTableStyleCode);
                     break;
                 case QueryType.Station:
                     trainInfo = query.ByStation(cbDepart.Text.Trim(), queryTime.Value.Date);
+                    dataGrid.TableStyles.Clear();
+                    dataGridTableStyleStation.MappingName = "TrainInfo[]";
+                    dataGrid.TableStyles.Add(dataGridTableStyleStation);
                     break;
             }
             dataGrid.DataSource = trainInfo;
@@ -64,10 +73,13 @@ namespace OnlineSKB
             IQuery query = new Web12306();
             if (dataGrid.DataSource != null)
             {
-                TrainInfo trainInfo = query.GetTrainInfo((dataGrid.DataSource as TrainInfo[])[dataGrid.CurrentCell.RowNumber].Code, queryTime.Value.Date);
+                TrainInfo trainInfo = (dataGrid.DataSource as TrainInfo[])[dataGrid.CurrentCell.RowNumber];
+                if (trainInfo.StationInfo == null)
+                    trainInfo = query.GetTrainInfo((dataGrid.DataSource as TrainInfo[])[dataGrid.CurrentCell.RowNumber].Code, queryTime.Value.Date);
                 TrainInfoForm form = new TrainInfoForm();
                 form.TrainInfo = trainInfo;
                 form.ShowDialog();
+                (dataGrid.DataSource as TrainInfo[])[dataGrid.CurrentCell.RowNumber].StationInfo = trainInfo.StationInfo;
             }
         }
 

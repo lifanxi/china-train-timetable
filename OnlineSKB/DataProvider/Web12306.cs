@@ -232,6 +232,7 @@ namespace OnlineSKB
                 if (c.IndexOf(code) != -1)
                 {
                     TrainInfo ti = GetTrainInfo(c, date);
+                    ti.TrainDuration = ti.StationInfo[ti.StationInfo.Length - 1].Duration;
                     array.Add(ti);
                 }
 
@@ -324,6 +325,7 @@ namespace OnlineSKB
         private HttpWebResponse GetResponseFromWeb(string url, string [,] postData)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Proxy = System.Net.GlobalProxySelection.GetEmptyWebProxy();
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < postData.GetLength(0); ++i)
             {

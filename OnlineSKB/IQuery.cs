@@ -18,6 +18,7 @@ namespace OnlineSKB
         public string TrainDestination { get; set; }
         public DateTime TrainDepartTime { get; set; }
         public DateTime TrainDestTime { get; set; }
+        public string TrainDuration { set; get; }
         public string TrainClass { get; set; }
         //public string RangeDuration
         //{
@@ -43,6 +44,34 @@ namespace OnlineSKB
         public string Code { get; set; }
         public DateTime ArrivalTime { get; set; }
         public DateTime DepartureTime { get; set; }
+        public string ArrivalTimeDisplay
+        {
+            get
+            {
+                if (ArrivalTime != new DateTime(0))
+                {
+                    return ArrivalTime.ToString("HH:mm");
+                }
+                else
+                {
+                    return "--";
+                }
+            }
+        }
+        public string DepartureTimeDisplay
+        {
+            get
+            {
+                if (DepartureTime != new DateTime(0))
+                {
+                    return DepartureTime.ToString("HH:mm");
+                }
+                else
+                {
+                    return "--";
+                }
+            }
+        }
         public Price Price { get; set; }
         public int Distance { get; set; }
         public string Duration { get; set; }

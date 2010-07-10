@@ -29,6 +29,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn21;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn22;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn24;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn23;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn25;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn29;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn26;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn27;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn28;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn11;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn14;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn15;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn19;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn16;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn17;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn1;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn2;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn4;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn3;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn5;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn9;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn6;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn7;
+            System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn8;
+            this.dataGridTableStyleStation = new System.Windows.Forms.DataGridTableStyle();
+            this.dataGridTableStyleCode = new System.Windows.Forms.DataGridTableStyle();
+            this.dataGridTableStyleStationStation = new System.Windows.Forms.DataGridTableStyle();
             this.mainMenu = new System.Windows.Forms.MainMenu();
             this.menuQuery = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
@@ -37,17 +64,6 @@
             this.menuStationQuery = new System.Windows.Forms.MenuItem();
             this.menuItem5 = new System.Windows.Forms.MenuItem();
             this.menuExit = new System.Windows.Forms.MenuItem();
-            this.dataGrid = new System.Windows.Forms.DataGrid();
-            this.dataGridTableStyle = new System.Windows.Forms.DataGridTableStyle();
-            this.dataGridTextBoxColumn1 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn2 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn4 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn3 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn5 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn6 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn7 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn8 = new System.Windows.Forms.DataGridTextBoxColumn();
-            this.dataGridTextBoxColumn9 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.lblOne = new System.Windows.Forms.Label();
             this.lblTwo = new System.Windows.Forms.Label();
             this.cbDepart = new System.Windows.Forms.ComboBox();
@@ -55,7 +71,233 @@
             this.queryTime = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.tbTrainCode = new System.Windows.Forms.TextBox();
+            this.dataGrid = new System.Windows.Forms.DataGrid();
+            dataGridTextBoxColumn21 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn22 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn24 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn23 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn25 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn29 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn26 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn27 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn28 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn11 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn14 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn15 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn19 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn16 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn17 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn1 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn2 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn4 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn3 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn5 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn9 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn6 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn7 = new System.Windows.Forms.DataGridTextBoxColumn();
+            dataGridTextBoxColumn8 = new System.Windows.Forms.DataGridTextBoxColumn();
             this.SuspendLayout();
+            // 
+            // dataGridTableStyleStation
+            // 
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn21);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn22);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn24);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn23);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn25);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn29);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn26);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn27);
+            this.dataGridTableStyleStation.GridColumnStyles.Add(dataGridTextBoxColumn28);
+            // 
+            // dataGridTextBoxColumn21
+            // 
+            dataGridTextBoxColumn21.Format = "";
+            dataGridTextBoxColumn21.FormatInfo = null;
+            dataGridTextBoxColumn21.HeaderText = "车次";
+            dataGridTextBoxColumn21.MappingName = "Code";
+            // 
+            // dataGridTextBoxColumn22
+            // 
+            dataGridTextBoxColumn22.Format = "";
+            dataGridTextBoxColumn22.FormatInfo = null;
+            dataGridTextBoxColumn22.HeaderText = "发站";
+            dataGridTextBoxColumn22.MappingName = "RangeDeparture";
+            // 
+            // dataGridTextBoxColumn24
+            // 
+            dataGridTextBoxColumn24.Format = "HH:mm";
+            dataGridTextBoxColumn24.FormatInfo = null;
+            dataGridTextBoxColumn24.HeaderText = "发时";
+            dataGridTextBoxColumn24.MappingName = "RangeDepartTime";
+            // 
+            // dataGridTextBoxColumn23
+            // 
+            dataGridTextBoxColumn23.Format = "";
+            dataGridTextBoxColumn23.FormatInfo = null;
+            dataGridTextBoxColumn23.HeaderText = "到站";
+            dataGridTextBoxColumn23.MappingName = "RangeDestination";
+            // 
+            // dataGridTextBoxColumn25
+            // 
+            dataGridTextBoxColumn25.Format = "HH:mm";
+            dataGridTextBoxColumn25.FormatInfo = null;
+            dataGridTextBoxColumn25.HeaderText = "到时";
+            dataGridTextBoxColumn25.MappingName = "RangeDestTime";
+            // 
+            // dataGridTextBoxColumn29
+            // 
+            dataGridTextBoxColumn29.Format = "";
+            dataGridTextBoxColumn29.FormatInfo = null;
+            dataGridTextBoxColumn29.HeaderText = "历时";
+            dataGridTextBoxColumn29.MappingName = "RangeDuration";
+            // 
+            // dataGridTextBoxColumn26
+            // 
+            dataGridTextBoxColumn26.Format = "";
+            dataGridTextBoxColumn26.FormatInfo = null;
+            dataGridTextBoxColumn26.HeaderText = "始发站";
+            dataGridTextBoxColumn26.MappingName = "TrainDeparture";
+            // 
+            // dataGridTextBoxColumn27
+            // 
+            dataGridTextBoxColumn27.Format = "";
+            dataGridTextBoxColumn27.FormatInfo = null;
+            dataGridTextBoxColumn27.HeaderText = "终点站";
+            dataGridTextBoxColumn27.MappingName = "TrainDestination";
+            // 
+            // dataGridTextBoxColumn28
+            // 
+            dataGridTextBoxColumn28.Format = "";
+            dataGridTextBoxColumn28.FormatInfo = null;
+            dataGridTextBoxColumn28.HeaderText = "等级";
+            dataGridTextBoxColumn28.MappingName = "TrainClass";
+            // 
+            // dataGridTableStyleCode
+            // 
+            this.dataGridTableStyleCode.GridColumnStyles.Add(dataGridTextBoxColumn11);
+            this.dataGridTableStyleCode.GridColumnStyles.Add(dataGridTextBoxColumn16);
+            this.dataGridTableStyleCode.GridColumnStyles.Add(dataGridTextBoxColumn14);
+            this.dataGridTableStyleCode.GridColumnStyles.Add(dataGridTextBoxColumn17);
+            this.dataGridTableStyleCode.GridColumnStyles.Add(dataGridTextBoxColumn15);
+            this.dataGridTableStyleCode.GridColumnStyles.Add(dataGridTextBoxColumn19);
+            // 
+            // dataGridTextBoxColumn11
+            // 
+            dataGridTextBoxColumn11.Format = "";
+            dataGridTextBoxColumn11.FormatInfo = null;
+            dataGridTextBoxColumn11.HeaderText = "车次";
+            dataGridTextBoxColumn11.MappingName = "Code";
+            // 
+            // dataGridTextBoxColumn14
+            // 
+            dataGridTextBoxColumn14.Format = "HH:mm";
+            dataGridTextBoxColumn14.FormatInfo = null;
+            dataGridTextBoxColumn14.HeaderText = "发时";
+            dataGridTextBoxColumn14.MappingName = "TrainDepartTime";
+            // 
+            // dataGridTextBoxColumn15
+            // 
+            dataGridTextBoxColumn15.Format = "HH:mm";
+            dataGridTextBoxColumn15.FormatInfo = null;
+            dataGridTextBoxColumn15.HeaderText = "到时";
+            dataGridTextBoxColumn15.MappingName = "TrainDestTime";
+            // 
+            // dataGridTextBoxColumn19
+            // 
+            dataGridTextBoxColumn19.Format = "";
+            dataGridTextBoxColumn19.FormatInfo = null;
+            dataGridTextBoxColumn19.HeaderText = "历时";
+            dataGridTextBoxColumn19.MappingName = "TrainDuration";
+            // 
+            // dataGridTextBoxColumn16
+            // 
+            dataGridTextBoxColumn16.Format = "";
+            dataGridTextBoxColumn16.FormatInfo = null;
+            dataGridTextBoxColumn16.HeaderText = "始发站";
+            dataGridTextBoxColumn16.MappingName = "TrainDeparture";
+            // 
+            // dataGridTextBoxColumn17
+            // 
+            dataGridTextBoxColumn17.Format = "";
+            dataGridTextBoxColumn17.FormatInfo = null;
+            dataGridTextBoxColumn17.HeaderText = "终点站";
+            dataGridTextBoxColumn17.MappingName = "TrainDestination";
+            // 
+            // dataGridTableStyleStationStation
+            // 
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn1);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn2);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn4);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn3);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn5);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn9);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn6);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn7);
+            this.dataGridTableStyleStationStation.GridColumnStyles.Add(dataGridTextBoxColumn8);
+            // 
+            // dataGridTextBoxColumn1
+            // 
+            dataGridTextBoxColumn1.Format = "";
+            dataGridTextBoxColumn1.FormatInfo = null;
+            dataGridTextBoxColumn1.HeaderText = "车次";
+            dataGridTextBoxColumn1.MappingName = "Code";
+            // 
+            // dataGridTextBoxColumn2
+            // 
+            dataGridTextBoxColumn2.Format = "";
+            dataGridTextBoxColumn2.FormatInfo = null;
+            dataGridTextBoxColumn2.HeaderText = "发站";
+            dataGridTextBoxColumn2.MappingName = "RangeDeparture";
+            // 
+            // dataGridTextBoxColumn4
+            // 
+            dataGridTextBoxColumn4.Format = "HH:mm";
+            dataGridTextBoxColumn4.FormatInfo = null;
+            dataGridTextBoxColumn4.HeaderText = "发时";
+            dataGridTextBoxColumn4.MappingName = "RangeDepartTime";
+            // 
+            // dataGridTextBoxColumn3
+            // 
+            dataGridTextBoxColumn3.Format = "";
+            dataGridTextBoxColumn3.FormatInfo = null;
+            dataGridTextBoxColumn3.HeaderText = "到站";
+            dataGridTextBoxColumn3.MappingName = "RangeDestination";
+            // 
+            // dataGridTextBoxColumn5
+            // 
+            dataGridTextBoxColumn5.Format = "HH:mm";
+            dataGridTextBoxColumn5.FormatInfo = null;
+            dataGridTextBoxColumn5.HeaderText = "到时";
+            dataGridTextBoxColumn5.MappingName = "RangeDestTime";
+            // 
+            // dataGridTextBoxColumn9
+            // 
+            dataGridTextBoxColumn9.Format = "";
+            dataGridTextBoxColumn9.FormatInfo = null;
+            dataGridTextBoxColumn9.HeaderText = "历时";
+            dataGridTextBoxColumn9.MappingName = "RangeDuration";
+            // 
+            // dataGridTextBoxColumn6
+            // 
+            dataGridTextBoxColumn6.Format = "";
+            dataGridTextBoxColumn6.FormatInfo = null;
+            dataGridTextBoxColumn6.HeaderText = "始发站";
+            dataGridTextBoxColumn6.MappingName = "TrainDeparture";
+            // 
+            // dataGridTextBoxColumn7
+            // 
+            dataGridTextBoxColumn7.Format = "";
+            dataGridTextBoxColumn7.FormatInfo = null;
+            dataGridTextBoxColumn7.HeaderText = "终点站";
+            dataGridTextBoxColumn7.MappingName = "TrainDestination";
+            // 
+            // dataGridTextBoxColumn8
+            // 
+            dataGridTextBoxColumn8.Format = "";
+            dataGridTextBoxColumn8.FormatInfo = null;
+            dataGridTextBoxColumn8.HeaderText = "等级";
+            dataGridTextBoxColumn8.MappingName = "TrainClass";
             // 
             // mainMenu
             // 
@@ -99,96 +341,6 @@
             // 
             this.menuExit.Text = "退出";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
-            // 
-            // dataGrid
-            // 
-            this.dataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.dataGrid.Location = new System.Drawing.Point(3, 52);
-            this.dataGrid.Name = "dataGrid";
-            this.dataGrid.Size = new System.Drawing.Size(234, 213);
-            this.dataGrid.TabIndex = 1;
-            this.dataGrid.TableStyles.Add(this.dataGridTableStyle);
-            this.dataGrid.CurrentCellChanged += new System.EventHandler(this.dataGrid_CurrentCellChanged);
-            this.dataGrid.Click += new System.EventHandler(this.dataGrid_Click);
-            // 
-            // dataGridTableStyle
-            // 
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn1);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn2);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn4);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn3);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn5);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn6);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn7);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn8);
-            this.dataGridTableStyle.GridColumnStyles.Add(this.dataGridTextBoxColumn9);
-            this.dataGridTableStyle.MappingName = "TrainInfo[]";
-            // 
-            // dataGridTextBoxColumn1
-            // 
-            this.dataGridTextBoxColumn1.Format = "";
-            this.dataGridTextBoxColumn1.FormatInfo = null;
-            this.dataGridTextBoxColumn1.HeaderText = "车次";
-            this.dataGridTextBoxColumn1.MappingName = "Code";
-            // 
-            // dataGridTextBoxColumn2
-            // 
-            this.dataGridTextBoxColumn2.Format = "";
-            this.dataGridTextBoxColumn2.FormatInfo = null;
-            this.dataGridTextBoxColumn2.HeaderText = "发站";
-            this.dataGridTextBoxColumn2.MappingName = "RangeDeparture";
-            // 
-            // dataGridTextBoxColumn4
-            // 
-            this.dataGridTextBoxColumn4.Format = "HH:mm";
-            this.dataGridTextBoxColumn4.FormatInfo = null;
-            this.dataGridTextBoxColumn4.HeaderText = "发时";
-            this.dataGridTextBoxColumn4.MappingName = "RangeDepartTime";
-            // 
-            // dataGridTextBoxColumn3
-            // 
-            this.dataGridTextBoxColumn3.Format = "";
-            this.dataGridTextBoxColumn3.FormatInfo = null;
-            this.dataGridTextBoxColumn3.HeaderText = "到站";
-            this.dataGridTextBoxColumn3.MappingName = "RangeDestination";
-            // 
-            // dataGridTextBoxColumn5
-            // 
-            this.dataGridTextBoxColumn5.Format = "HH:mm";
-            this.dataGridTextBoxColumn5.FormatInfo = null;
-            this.dataGridTextBoxColumn5.HeaderText = "到时";
-            this.dataGridTextBoxColumn5.MappingName = "RangeDestTime";
-            // 
-            // dataGridTextBoxColumn6
-            // 
-            this.dataGridTextBoxColumn6.Format = "";
-            this.dataGridTextBoxColumn6.FormatInfo = null;
-            this.dataGridTextBoxColumn6.HeaderText = "始发站";
-            this.dataGridTextBoxColumn6.MappingName = "TrainDeparture";
-            // 
-            // dataGridTextBoxColumn7
-            // 
-            this.dataGridTextBoxColumn7.Format = "";
-            this.dataGridTextBoxColumn7.FormatInfo = null;
-            this.dataGridTextBoxColumn7.HeaderText = "终点站";
-            this.dataGridTextBoxColumn7.MappingName = "TrainDestination";
-            // 
-            // dataGridTextBoxColumn8
-            // 
-            this.dataGridTextBoxColumn8.Format = "";
-            this.dataGridTextBoxColumn8.FormatInfo = null;
-            this.dataGridTextBoxColumn8.HeaderText = "等级";
-            this.dataGridTextBoxColumn8.MappingName = "TrainClass";
-            // 
-            // dataGridTextBoxColumn9
-            // 
-            this.dataGridTextBoxColumn9.Format = "";
-            this.dataGridTextBoxColumn9.FormatInfo = null;
-            this.dataGridTextBoxColumn9.HeaderText = "历时";
-            this.dataGridTextBoxColumn9.MappingName = "RangeDuration";
             // 
             // lblOne
             // 
@@ -248,6 +400,22 @@
             this.tbTrainCode.TabIndex = 9;
             this.tbTrainCode.Visible = false;
             // 
+            // dataGrid
+            // 
+            this.dataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dataGrid.Location = new System.Drawing.Point(3, 52);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.Size = new System.Drawing.Size(234, 213);
+            this.dataGrid.TabIndex = 1;
+            this.dataGrid.TableStyles.Add(this.dataGridTableStyleStationStation);
+            this.dataGrid.TableStyles.Add(this.dataGridTableStyleCode);
+            this.dataGrid.TableStyles.Add(this.dataGridTableStyleStation);
+            this.dataGrid.CurrentCellChanged += new System.EventHandler(this.dataGrid_CurrentCellChanged);
+            this.dataGrid.Click += new System.EventHandler(this.dataGrid_Click);
+            // 
             // OnlineSKB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -275,28 +443,21 @@
         private System.Windows.Forms.MenuItem menuQuery;
         private System.Windows.Forms.MenuItem menuItem2;
         private System.Windows.Forms.MenuItem menuExit;
-        private System.Windows.Forms.DataGrid dataGrid;
         private System.Windows.Forms.Label lblOne;
         private System.Windows.Forms.Label lblTwo;
         private System.Windows.Forms.ComboBox cbDepart;
         private System.Windows.Forms.ComboBox cbDest;
         private System.Windows.Forms.DateTimePicker queryTime;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridTableStyle dataGridTableStyle;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn1;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn2;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn3;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn4;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn5;
         private System.Windows.Forms.MenuItem menuStationStationQuery;
         private System.Windows.Forms.MenuItem menuTrainCodeQuery;
         private System.Windows.Forms.MenuItem menuStationQuery;
         private System.Windows.Forms.MenuItem menuItem5;
         private System.Windows.Forms.TextBox tbTrainCode;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn6;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn7;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn8;
-        private System.Windows.Forms.DataGridTextBoxColumn dataGridTextBoxColumn9;
+        private System.Windows.Forms.DataGrid dataGrid;
+        private System.Windows.Forms.DataGridTableStyle dataGridTableStyleStation;
+        private System.Windows.Forms.DataGridTableStyle dataGridTableStyleCode;
+        private System.Windows.Forms.DataGridTableStyle dataGridTableStyleStationStation;
     }
 }
 

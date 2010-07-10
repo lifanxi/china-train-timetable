@@ -58,6 +58,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Location = new System.Drawing.Point(164, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(72, 20);
@@ -93,6 +94,9 @@
             // 
             // dataGrid
             // 
+            this.dataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.dataGrid.Location = new System.Drawing.Point(4, 49);
             this.dataGrid.Name = "dataGrid";
@@ -118,18 +122,18 @@
             // 
             // dataGridTextBoxColumn2
             // 
-            this.dataGridTextBoxColumn2.Format = "HH:mm";
+            this.dataGridTextBoxColumn2.Format = "";
             this.dataGridTextBoxColumn2.FormatInfo = null;
             this.dataGridTextBoxColumn2.HeaderText = "到时";
-            this.dataGridTextBoxColumn2.MappingName = "ArrivalTime";
+            this.dataGridTextBoxColumn2.MappingName = "ArrivalTimeDisplay";
             this.dataGridTextBoxColumn2.NullText = "--";
             // 
             // dataGridTextBoxColumn3
             // 
-            this.dataGridTextBoxColumn3.Format = "HH:mm";
+            this.dataGridTextBoxColumn3.Format = "";
             this.dataGridTextBoxColumn3.FormatInfo = null;
             this.dataGridTextBoxColumn3.HeaderText = "发时";
-            this.dataGridTextBoxColumn3.MappingName = "DepartureTime";
+            this.dataGridTextBoxColumn3.MappingName = "DepartureTimeDisplay";
             this.dataGridTextBoxColumn3.NullText = "--";
             // 
             // dataGridTextBoxColumn4
